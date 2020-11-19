@@ -16,6 +16,10 @@ namespace ChatbotServer
             IPEndPoint ipEnd = new IPEndPoint(ipaddress, 23000);
 
             listenerSocket.Bind(ipEnd);
+
+            listenerSocket.Listen(5);
+            Console.WriteLine("Server in ascolto...");
+            Console.WriteLine("Attendo una connessione da parte di un client");
         }
     }
 }
