@@ -28,6 +28,11 @@ namespace ChatbotServer
             byte[] buffer = new byte[128];
             int receivedBytes = 0, sendedBytes = 0;
             string receivedString, sendString;
+
+            while (true)
+            {
+
+            }
         }
     }
 }
