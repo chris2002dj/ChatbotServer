@@ -14,6 +14,8 @@ namespace ChatbotServer
             IPAddress ipaddress = IPAddress.Any;
 
             IPEndPoint ipEnd = new IPEndPoint(ipaddress, 23000);
+
+            listenerSocket.Bind(ipEnd);
         }
     }
 }
