@@ -26,6 +26,8 @@ namespace ChatbotServer
             Console.WriteLine("Client IP: " + client.RemoteEndPoint.ToString());
 
             byte[] buffer = new byte[128];
+            int receivedBytes = 0, sendedBytes = 0;
+            string receivedString, sendString;
         }
     }
 }
