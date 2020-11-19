@@ -22,6 +22,8 @@ namespace ChatbotServer
             Console.WriteLine("Attendo una connessione da parte di un client");
 
             Socket client = listenerSocket.Accept();
+
+            Console.WriteLine("Client IP: " + client.RemoteEndPoint.ToString());
         }
     }
 }
