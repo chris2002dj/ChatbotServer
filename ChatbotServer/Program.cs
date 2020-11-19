@@ -20,6 +20,8 @@ namespace ChatbotServer
             listenerSocket.Listen(5);
             Console.WriteLine("Server in ascolto...");
             Console.WriteLine("Attendo una connessione da parte di un client");
+
+            Socket client = listenerSocket.Accept();
         }
     }
 }
