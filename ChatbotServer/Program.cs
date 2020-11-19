@@ -32,6 +32,7 @@ namespace ChatbotServer
             while (true)
             {
                 receivedBytes = client.Receive(buffer);
+                receivedString = Encoding.ASCII.GetString(buffer, 0, receivedBytes);
             }
         }
     }
