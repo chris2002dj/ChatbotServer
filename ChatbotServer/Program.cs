@@ -31,7 +31,7 @@ namespace ChatbotServer
 
             while (true)
             {
-
+                receivedBytes = client.Receive(buffer);
             }
         }
     }
