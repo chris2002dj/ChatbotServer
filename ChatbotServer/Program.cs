@@ -12,6 +12,8 @@ namespace ChatbotServer
             Socket listenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
             IPAddress ipaddress = IPAddress.Any;
+
+            IPEndPoint ipEnd = new IPEndPoint(ipaddress, 23000);
         }
     }
 }
