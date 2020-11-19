@@ -10,6 +10,8 @@ namespace ChatbotServer
         static void Main(string[] args)
         {
             Socket listenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+
+            IPAddress ipaddress = IPAddress.Any;
         }
     }
 }
