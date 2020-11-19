@@ -9,7 +9,7 @@ namespace ChatbotServer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Socket listenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         }
     }
 }
