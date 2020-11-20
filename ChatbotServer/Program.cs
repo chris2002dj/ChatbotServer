@@ -58,6 +58,9 @@ namespace ChatbotServer
                                 sendString = "Non importa";
                                 break;
                         }
+
+                        buffer = Encoding.ASCII.GetBytes(sendString + "\n\r");
+                        sendedBytes = client.Send(buffer);
                     }
                 }
             }
