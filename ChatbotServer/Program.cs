@@ -65,6 +65,8 @@ namespace ChatbotServer
                     else
                         break;
                 }
+
+                Array.Clear(buffer, 0, buffer.Length);
             }
         }
     }
