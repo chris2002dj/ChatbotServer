@@ -36,8 +36,9 @@ namespace ChatbotServer
 
                 if (receivedString.IndexOf("\n") == -1)
                 {
-
+                    Console.WriteLine("C: " + receivedString);
                 }
+            }
         }
     }
 }
