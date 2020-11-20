@@ -40,7 +40,24 @@ namespace ChatbotServer
 
                     if (receivedString.ToLower().Trim() != "quit")
                     {
+                        switch (receivedString.ToLower())
+                        {
+                            case "ciao":
+                                sendString = "Buongiorno";
+                                break;
 
+                            case "come stai?":
+                                sendString = "Bene";
+                                break;
+
+                            case "che fai?":
+                                sendString = "Niente";
+                                break;
+
+                            default:
+                                sendString = "Non importa";
+                                break;
+                        }
                     }
                 }
             }
