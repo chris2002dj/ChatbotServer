@@ -33,7 +33,11 @@ namespace ChatbotServer
             {
                 receivedBytes = client.Receive(buffer);
                 receivedString = Encoding.ASCII.GetString(buffer, 0, receivedBytes);
-            }
+
+                if (receivedString.IndexOf("\n") == -1)
+                {
+
+                }
         }
     }
 }
